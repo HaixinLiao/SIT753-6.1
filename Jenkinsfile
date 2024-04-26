@@ -15,15 +15,9 @@ pipeline {
             post {
                 success {
                     mail to: 's223693774@deakin.edu.au',
-                         subject: 'Unit and Integration Tests succeed',
-                         body: 'The Unit and Integration Tests stage succeed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
                 }
                 failure {
-                    mail to: 's223693774@deakin.edu.au',
-                         subject: 'Unit and Integration Tests Failed',
-                         body: 'The Unit and Integration Tests stage failed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
+                    mail to: 's223693774@deakin.edu.au'
                 }
             }
         }
@@ -39,16 +33,10 @@ pipeline {
 
             post {
                 success {
-                    mail to: 's223693774@deakin.edu.au',
-                         subject: 'Security Scan succeed',
-                         body: 'The Security Scan stage succeed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
+                    mail to: 's223693774@deakin.edu.au'
                 }
                 failure {
-                    mail to: 's223693774@deakin.edu.au',
-                         subject: 'Security Scan Failed',
-                         body: 'The Security Scan stage failed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
+                    mail to: 's223693774@deakin.edu.au'
                 }
             }
         }
@@ -64,16 +52,10 @@ pipeline {
 
             post {
                 success {
-                    mail to: 's223693774@deakin.edu.au',
-                         subject: 'Integration Tests on Staging succeed',
-                         body: 'The Integration Tests on Staging stage succeed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
+                    mail to: 's223693774@deakin.edu.au'
                 }
                 failure {
-                    mail to: 's223693774@deakin.edu.au',
-                         subject: 'Integration Tests on Staging Failed',
-                         body: 'The Integration Tests on Staging stage failed. Please see the attached log for details.',
-                         charset: [file: currentBuild.rawBuild.getLogFile()]
+                    mail to: 's223693774@deakin.edu.au'
                 }
             }
         }
