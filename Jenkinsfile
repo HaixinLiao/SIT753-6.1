@@ -74,6 +74,7 @@ pipeline {
                          subject: 'Integration Tests on Staging Failed',
                          body: 'The Integration Tests on Staging stage failed. Please see the attached log for details.',
                          attachments: [file: currentBuild.rawBuild.getLogFile()]
+                }
             }
         }
         stage('Deploy to Production') { 
