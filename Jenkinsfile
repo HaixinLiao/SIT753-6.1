@@ -17,6 +17,7 @@ pipeline {
                     emailext to: 'liao295246318@gmail.com',
                         subject: 'Unit and Integration Tests succeed',
                         body: 'The Unit and Integration Tests stage succeed. Please see the attached log for details.'
+                        compressLog: true
                         attachLog: true
                 }
                 failure {
