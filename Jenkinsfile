@@ -14,7 +14,7 @@ pipeline {
 
             post {
                 success {
-                    mail to: 's223693774@deakin.edu.au',
+                    mail to: 's223693774@deakin.edu.au'
                 }
                 failure {
                     mail to: 's223693774@deakin.edu.au'
