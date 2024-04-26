@@ -14,15 +14,13 @@ pipeline {
 
             post {
                 success {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Unit and Integration Tests succeed',
                         body: 'The Unit and Integration Tests stage succeed. Please see the attached log for details.'
                         attachLog: true
                 }
                 failure {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Unit and Integration Tests Failed',
                         body: 'The Unit and Integration Tests stage failed. Please see the attached log for details.'
                         attachLog: true
@@ -41,15 +39,13 @@ pipeline {
 
             post {
                 success {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Security Scan succeed',
                         body: 'The Security Scan stage succeed. Please see the attached log for details.'
                         attachLog: true
                 }
                 failure {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Security Scan Failed',
                         body: 'The Security Scan stage failed. Please see the attached log for details.'
                         attachLog: true
@@ -68,15 +64,13 @@ pipeline {
 
             post {
                 success {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Integration Tests on Staging succeed',
                         body: 'The Integration Tests on Staging stage succeed. Please see the attached log for details.'
                         attachLog: true
                 }
                 failure {
-                    emailext 
-                        to: 'liao295246318@gmail.com',
+                    emailext to: 'liao295246318@gmail.com',
                         subject: 'Integration Tests on Staging Failed',
                         body: 'The Integration Tests on Staging stage failed. Please see the attached log for details.'
                         attachLog: true
