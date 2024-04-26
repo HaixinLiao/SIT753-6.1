@@ -39,12 +39,12 @@ pipeline {
                 success {
                     mail to: 'liao295246318@gmail.com',
                          subject: 'Security Scan succeed',
-                         body: 'The Security Scan stage succeed. Please see the attached log for details.'
+                         body: 'The Security Scan stage succeed. Please see the attached log for details. Check console output at $BUILD_URL to view the results.'
                 }
                 failure {
                     mail to: 'liao295246318@gmail.com',
                          subject: 'Security Scan Failed',
-                         body: 'The Security Scan stage failed. Please see the attached log for details. Check console output at $BUILD_URL to view the results.'
+                         body: 'The Security Scan stage failed. Please see the attached log for details.'
                 }
             }
         }
